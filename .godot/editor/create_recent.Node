@@ -1,0 +1,8 @@
+AnimationPlayer
+AudioStreamPlayer2D
+Label
+TextureRect
+AnimatedSprite2D
+Control
+CanvasLayer
+Node
