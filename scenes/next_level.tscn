@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bui1bsy5lpk8n"]
+
+[ext_resource type="Script" uid="uid://bqrhk2wt5x7xi" path="res://scripts/area_2d.gd" id="1_sd4vo"]
+[ext_resource type="Texture2D" uid="uid://cpnekr01617vv" path="res://Assets/sprites/singlecoin.png" id="2_e8fy2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wlp6t"]
+size = Vector2(13, 13)
+
+[node name="Next_level" type="Area2D"]
+visibility_layer = 3
+script = ExtResource("1_sd4vo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+texture = ExtResource("2_e8fy2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wlp6t")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,8 +1,12 @@
+AnimationTree
+AnimatedSprite2D
+CollisionShape2D
+Sprite2D
+Area2D
 AnimationPlayer
 AudioStreamPlayer2D
 Label
 TextureRect
-AnimatedSprite2D
 Control
 CanvasLayer
 Node
